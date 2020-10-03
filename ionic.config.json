@@ -1,0 +1,7 @@
+{
+  "name": "space-age-contact",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
