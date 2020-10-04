@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HTTP } from '@ionic-native/http/ngx';
 interface User {
     id : Number;
     profile_pic : string;
@@ -21,9 +21,13 @@ interface User {
 })
 export class UserService {
 
-  constructor(private http: HttpClient) { }
-  getPosts(){
-      return this.http.get<User[]>("https://space-age-contact.herokuapp.com/api/users/2/").map(data => console.log(data));
- }
+  constructor(private http: HTTP) { }
 
+  BASE_API = 'https://space-age-contact.herokuapp.com/api/'
+
+  getUser() {
+    console.log(this.BASE_API + 'users')
+    //(url, params, headers)
+    return this.http.get(this.BASE_API + 'users', {}, {})
+  }
 }
