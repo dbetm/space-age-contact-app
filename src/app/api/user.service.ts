@@ -28,6 +28,7 @@ export class UserService {
   getUser() {
     console.log(this.BASE_API + 'users')
     //(url, params, headers)
+    console.log(this.http.get(this.BASE_API + 'users', {}, {}))
     return this.http.get(this.BASE_API + 'users', {}, {})
   }
 }

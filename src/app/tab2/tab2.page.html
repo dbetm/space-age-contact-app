@@ -1,17 +1,26 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      <ion-icon name="game-controller-outline"></ion-icon>
+      Games
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class = "background">
+    <ion-card class = "center">
+        <ion-card-header class = "centered">
+        <ion-card-title class = "post"> <ion-text color="tertiary"> 323</ion-text> teams are participating </ion-card-title><br>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+        <ion-item>
+            <ion-label>Game topic</ion-label>
+            <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+              <ion-select-option value="Astronomy">Astronomy</ion-select-option>
+              <ion-select-option value="Physics">Physics</ion-select-option>
+            </ion-select>
+          </ion-item>
+
+        </ion-card-header>
+      <ion-button expand="full"  color="success"><ion-icon name="earth-outline"></ion-icon>Participate</ion-button>
+    </ion-card>
 </ion-content>

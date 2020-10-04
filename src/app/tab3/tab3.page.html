@@ -1,17 +1,83 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+    <ion-icon name="bar-chart-outline"></ion-icon>
+      Ranking
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class = "background">
+    <ion-card>
+        <ion-searchbar animated></ion-searchbar>
+        <ion-button expand="full" color="dark"><ion-icon name="eye-outline"></ion-icon>
+            Find me
+        </ion-button>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+          <ion-card-title class = "centered"> Top 10 </ion-card-title><br>
+          <ion-list>
+            <ion-item>
+                <ion-label>
+                    <ion-text color="tertiary">1</ion-text>
+                    Onder Francisco
+                </ion-label>
+                <ion-button color="dark"><ion-icon name="eye-outline"></ion-icon> </ion-button>
+            </ion-item>
+            <ion-item>
+                <ion-label>
+                    <ion-text color="tertiary">2</ion-text>
+                    Wolfteinter
+                </ion-label>
+                <ion-button color="dark"><ion-icon name="eye-outline"></ion-icon> </ion-button>
+            </ion-item>
+            <ion-item>
+                <ion-label>
+                    <ion-text color="tertiary">3</ion-text>
+                    TheWinderthester
+                </ion-label>
+                    <ion-button color="dark"><ion-icon name="eye-outline"></ion-icon> </ion-button>
+            </ion-item>
+            <ion-item>
+                <ion-label>
+                    <ion-text color="tertiary">4</ion-text>
+                    Tyufront
+                </ion-label>
+                <ion-button color="dark"><ion-icon name="eye-outline"></ion-icon> </ion-button>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+            </ion-item>
+            <ion-item>
+                <ion-label><ion-text color="tertiary">5</ion-text>
+                jUAN 98</ion-label>
+                <ion-button color="dark"><ion-icon name="eye-outline"></ion-icon> </ion-button>
+            </ion-item>
+            <ion-item>
+                <ion-label><ion-text color="tertiary">6</ion-text>
+                Grettert</ion-label>
+                <ion-button color="dark"><ion-icon name="eye-outline"></ion-icon> </ion-button>
+            </ion-item>
+            <ion-item>
+                <ion-label><ion-text color="tertiary">7</ion-text>
+                rodrig987</ion-label>
+                <ion-button color="dark"><ion-icon name="eye-outline"></ion-icon> </ion-button>
+            </ion-item>
+            <ion-item>
+                <ion-label><ion-text color="tertiary">8</ion-text>
+                johntter12</ion-label>
+                <ion-button color="dark"><ion-icon name="eye-outline"></ion-icon> </ion-button>
+            </ion-item>
+            <ion-item>
+                <ion-label><ion-text color="tertiary">9</ion-text>
+                disstrafers</ion-label>
+                <ion-button color="dark"><ion-icon name="eye-outline"></ion-icon> </ion-button>
+            </ion-item>
+            <ion-item>
+                <ion-label><ion-text color="tertiary">10</ion-text>
+                stringeer</ion-label>
+                <ion-button color="dark"><ion-icon name="eye-outline"></ion-icon> </ion-button>
+            </ion-item>
+        </ion-list>
+      </ion-card-header>
+    </ion-card>
 </ion-content>
