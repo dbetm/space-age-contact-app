@@ -9,7 +9,7 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-header [translucent]=\"true\">\n  <ion-toolbar>\n    <ion-title>\n      Tab 2\n    </ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content [fullscreen]=\"true\">\n  <ion-header collapse=\"condense\">\n    <ion-toolbar>\n      <ion-title size=\"large\">Tab 2</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <app-explore-container name=\"Tab 2 page\"></app-explore-container>\n</ion-content>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-header [translucent]=\"true\">\n  <ion-toolbar>\n    <ion-title>\n      <ion-icon name=\"game-controller-outline\"></ion-icon>\n      Games\n    </ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content [fullscreen]=\"true\" class = \"background\">\n    <ion-card class = \"center\">\n        <ion-card-header class = \"centered\">\n        <ion-card-title class = \"post\"> <ion-text color=\"tertiary\"> 323</ion-text> teams are participating </ion-card-title><br>\n\n        <ion-item>\n            <ion-label>Game topic</ion-label>\n            <ion-select value=\"brown\" okText=\"Okay\" cancelText=\"Dismiss\">\n              <ion-select-option value=\"Astronomy\">Astronomy</ion-select-option>\n              <ion-select-option value=\"Physics\">Physics</ion-select-option>\n            </ion-select>\n          </ion-item>\n\n        </ion-card-header>\n      <ion-button expand=\"full\"  color=\"success\"><ion-icon name=\"earth-outline\"></ion-icon>Participate</ion-button>\n    </ion-card>\n</ion-content>\n");
 
 /***/ }),
 
@@ -104,7 +104,7 @@ Tab2PageModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3RhYjIvdGFiMi5wYWdlLnNjc3MifQ== */");
+/* harmony default export */ __webpack_exports__["default"] = ("ion-content.background {\n  --background: linear-gradient(100deg, rgba(100,100,100,1) 0%, rgba(63,63,63,1) 13.5%, rgba(29,29,29,1) 33.33%, rgba(0,0,0,1) 100%) !important;\n}\n\n.centered {\n  text-align: center;\n}\n\n.center {\n  transform: translateY(-50%);\n  top: 50%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdGFiMi90YWIyLnBhZ2Uuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNLLDZJQUFBO0FBQ0w7O0FBQ0E7RUFDRSxrQkFBQTtBQUVGOztBQUFBO0VBQ0ksMkJBQUE7RUFDQSxRQUFBO0FBR0oiLCJmaWxlIjoic3JjL2FwcC90YWIyL3RhYjIucGFnZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiaW9uLWNvbnRlbnQuYmFja2dyb3VuZHtcbiAgICAgLS1iYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQoMTAwZGVnLCByZ2JhKDEwMCwxMDAsMTAwLDEpIDAlLCByZ2JhKDYzLDYzLDYzLDEpIDEzLjUlLCByZ2JhKDI5LDI5LDI5LDEpIDMzLjMzJSwgcmdiYSgwLDAsMCwxKSAxMDAlKSAhaW1wb3J0YW50O1xufVxuLmNlbnRlcmVke1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG4uY2VudGVyIHtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoLTUwJSk7XG4gICAgdG9wOiA1MCU7XG59XG4iXX0= */");
 
 /***/ }),
 

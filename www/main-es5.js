@@ -247,6 +247,17 @@
       "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
 
       var routes = [{
+        path: 'login',
+        loadChildren: function loadChildren() {
+          return __webpack_require__.e(
+          /*! import() | login-login-module */
+          "login-login-module").then(__webpack_require__.bind(null,
+          /*! ./login/login.module */
+          "./src/app/login/login.module.ts")).then(function (m) {
+            return m.LoginPageModule;
+          });
+        }
+      }, {
         path: '',
         loadChildren: function loadChildren() {
           return __webpack_require__.e(
@@ -255,6 +266,28 @@
           /*! ./tabs/tabs.module */
           "./src/app/tabs/tabs.module.ts")).then(function (m) {
             return m.TabsPageModule;
+          });
+        }
+      }, {
+        path: 'registration',
+        loadChildren: function loadChildren() {
+          return __webpack_require__.e(
+          /*! import() | registration-registration-module */
+          "registration-registration-module").then(__webpack_require__.bind(null,
+          /*! ./registration/registration.module */
+          "./src/app/registration/registration.module.ts")).then(function (m) {
+            return m.RegistrationPageModule;
+          });
+        }
+      }, {
+        path: 'game',
+        loadChildren: function loadChildren() {
+          return __webpack_require__.e(
+          /*! import() | game-game-module */
+          "game-game-module").then(__webpack_require__.bind(null,
+          /*! ./game/game.module */
+          "./src/app/game/game.module.ts")).then(function (m) {
+            return m.GamePageModule;
           });
         }
       }];

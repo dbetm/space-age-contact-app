@@ -333,8 +333,20 @@ __webpack_require__.r(__webpack_exports__);
 
 const routes = [
     {
+        path: 'login',
+        loadChildren: () => __webpack_require__.e(/*! import() | login-login-module */ "login-login-module").then(__webpack_require__.bind(null, /*! ./login/login.module */ "./src/app/login/login.module.ts")).then(m => m.LoginPageModule)
+    },
+    {
         path: '',
         loadChildren: () => __webpack_require__.e(/*! import() | tabs-tabs-module */ "tabs-tabs-module").then(__webpack_require__.bind(null, /*! ./tabs/tabs.module */ "./src/app/tabs/tabs.module.ts")).then(m => m.TabsPageModule)
+    },
+    {
+        path: 'registration',
+        loadChildren: () => __webpack_require__.e(/*! import() | registration-registration-module */ "registration-registration-module").then(__webpack_require__.bind(null, /*! ./registration/registration.module */ "./src/app/registration/registration.module.ts")).then(m => m.RegistrationPageModule)
+    },
+    {
+        path: 'game',
+        loadChildren: () => __webpack_require__.e(/*! import() | game-game-module */ "game-game-module").then(__webpack_require__.bind(null, /*! ./game/game.module */ "./src/app/game/game.module.ts")).then(m => m.GamePageModule)
     }
 ];
 let AppRoutingModule = class AppRoutingModule {
